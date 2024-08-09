@@ -4,7 +4,7 @@
   <link rel="icon" href="favicon.png">
   <meta charset='utf-8' />
   <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-  <style id="head">
+  <style>
     .bigfont { font-size:1.3em; }
 
     .recent_entry {font-size:0.7em;}
@@ -18,10 +18,6 @@
 
     .graybackground {
       background-color: #eeeeee;
-    }
-
-    .bluebackground {
-      background-color: #3333ee;
     }
 
     #progressBar {
@@ -171,7 +167,7 @@ work: <select id="work" name='work'>
 <!-- ######################################## -->
 <!-- show lube status -->
 <!-- ######################################## -->
-<div id="show1" class="graybackground">
+<div class="graybackground">
   <hr>
   <div class="scrollmenu">
   <table><tr><td>teammachine</td><td>ripley</td><td>renegade</td><td>kickr_renegade</td><td>ninee</td></tr><tr><td><div id='progressBar'><div id='progressBarVal' style='background-color:green;width:18%;'></div></div><br><span style='font-size:0.8em;'>(2024-08-04:32.44)</span><br>25574.03</td><td><div id='progressBar'><div id='progressBarVal' style='background-color:green;width:14%;'></div></div><br><span style='font-size:0.8em;'>(2024-06-10:10.75)</span><br>824.21</td><td><div id='progressBar'><div id='progressBarVal' style='background-color:green;width:0%;'></div></div><br><span style='font-size:0.8em;'>(2022-01-05:<b>null</b>)</span><br>7791.96</td><td><div id='progressBar'><div id='progressBarVal' style='background-color:#cccc00;width:80%;'></div></div><br><span style='font-size:0.8em;'>(2024-05-13:485)</span><br>6559.5</td><td><div id='progressBar'><div id='progressBarVal' style='background-color:green;width:26%;'></div></div><br><span style='font-size:0.8em;'>(2020-05-22:78.26)</span><br>3832.26</td></tr></table></div>
@@ -225,7 +221,7 @@ Elevation done this month:
 //change bg color when its not on "live" server
 if (window.location.href.match(/github/)) {
     var elements = document.getElementsByClassName("graybackground");
-    elements[0].style.backgroundColor="#666688";
+    elements[0].style.backgroundColor="#AAAAFF";
 }
 </script>
 
